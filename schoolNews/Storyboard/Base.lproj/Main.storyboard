@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zyn-pg-PDV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="schoolNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-fU-tgP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="psnPicScinfo" translatesAutoresizingMaskIntoConstraints="NO" id="fK8-Uh-Vba">
+                                        <rect key="frame" x="131" y="125" width="113" height="103"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="113" id="9uK-yi-v9o"/>
+                                            <constraint firstAttribute="height" constant="103" id="abi-St-BRl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="등록된 학교가 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-v5-2uY">
+                                        <rect key="frame" x="107" y="253" width="161" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-Ue-hTU">
+                                        <rect key="frame" x="77.5" y="394" width="220" height="40"/>
+                                        <color key="backgroundColor" red="0.45098039220000002" green="0.57647058819999997" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HEG-6K-jQP"/>
+                                            <constraint firstAttribute="width" constant="220" id="KfA-66-bLe"/>
+                                        </constraints>
+                                        <state key="normal" title="학교 등록">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="schoolEnrollButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZQ-jj-kJt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eQZ-v5-2uY" firstAttribute="top" secondItem="fK8-Uh-Vba" secondAttribute="bottom" constant="25" id="HQS-G3-o7W"/>
+                                    <constraint firstItem="yv3-Ue-hTU" firstAttribute="centerX" secondItem="bDa-fU-tgP" secondAttribute="centerX" id="W9U-Rx-qyc"/>
+                                    <constraint firstItem="yv3-Ue-hTU" firstAttribute="top" secondItem="eQZ-v5-2uY" secondAttribute="bottom" constant="120" id="XAH-by-hsB"/>
+                                    <constraint firstItem="eQZ-v5-2uY" firstAttribute="centerX" secondItem="bDa-fU-tgP" secondAttribute="centerX" id="aYr-aS-X15"/>
+                                    <constraint firstItem="fK8-Uh-Vba" firstAttribute="centerX" secondItem="bDa-fU-tgP" secondAttribute="centerX" id="duv-aC-Zx1"/>
+                                    <constraint firstItem="fK8-Uh-Vba" firstAttribute="top" secondItem="bDa-fU-tgP" secondAttribute="top" constant="125" id="kA3-dZ-PSV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4OC-av-V5V">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색한 데이터가 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEE-iW-CTr">
+                                        <rect key="frame" x="59.5" y="286.5" width="256" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.45098039220000002" green="0.57647058819999997" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TEE-iW-CTr" firstAttribute="centerY" secondItem="4OC-av-V5V" secondAttribute="centerY" id="EmC-Nk-tb8"/>
+                                    <constraint firstItem="TEE-iW-CTr" firstAttribute="centerX" secondItem="4OC-av-V5V" secondAttribute="centerX" id="vdr-3s-IBB"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Web-yc-yCu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Web-yc-yCu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6oL-A8-Y4C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4OC-av-V5V" secondAttribute="bottom" id="Die-CM-ilT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Web-yc-yCu" secondAttribute="trailing" id="EVP-fE-Xbi"/>
+                            <constraint firstItem="bDa-fU-tgP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FTh-o1-sHk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDa-fU-tgP" secondAttribute="trailing" id="K8h-oA-y6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bDa-fU-tgP" secondAttribute="bottom" id="dIx-9F-IpS"/>
+                            <constraint firstItem="Web-yc-yCu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eiv-kJ-4aw"/>
+                            <constraint firstItem="4OC-av-V5V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="epq-Ml-ZuH"/>
+                            <constraint firstItem="4OC-av-V5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fgj-EQ-hc1"/>
+                            <constraint firstItem="4OC-av-V5V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hhr-V2-Aae"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Web-yc-yCu" secondAttribute="bottom" id="pCU-by-ceg"/>
+                            <constraint firstItem="bDa-fU-tgP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u2e-Hj-Ozu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kxm-bG-whx">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Wz8-Xm-3w6"/>
+                        <barButtonItem key="rightBarButtonItem" title="학교 삭제" id="pNc-KW-OYv">
+                            <connections>
+                                <action selector="schoolDeleteButtonActioin:" destination="BYZ-38-t0r" id="vJb-p4-jl8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emptyEnrolledSchool" destination="bDa-fU-tgP" id="eVP-3M-PS3"/>
+                        <outlet property="nonSchoolFoodDataView" destination="4OC-av-V5V" id="jyc-Hs-d4J"/>
+                        <outlet property="schoolNewsTableView" destination="Web-yc-yCu" id="B77-bi-ele"/>
+                        <segue destination="w8h-F8-0uO" kind="show" identifier="enrollSchoolSegue" id="DTH-6t-eVN"/>
+                        <segue destination="4qr-l8-tsm" kind="show" identifier="monthFoodListSegue" id="8s1-NN-Y9z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="129.98500749625188"/>
+        </scene>
+        <!--SchoolSearch-->
+        <scene sceneID="pTS-c6-mFS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SchoolSearch" id="w8h-F8-0uO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0g-HN-3md" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="104"/>
+        </scene>
+        <!--MonthFoodList-->
+        <scene sceneID="AWf-ik-doB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MonthFoodList" id="4qr-l8-tsm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFY-0E-Kf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="157"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wpS-HD-v9j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zyn-pg-PDV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GfC-rw-EjN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mjr-HP-trp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSW-6r-1nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="psnPicScinfo" width="113" height="103.5"/>
+    </resources>
+</document>

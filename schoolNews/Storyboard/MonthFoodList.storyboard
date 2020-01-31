@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WJQ-zw-pff">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Month Food List View Controller-->
+        <scene sceneID="TXt-L7-wg9">
+            <objects>
+                <viewController id="WJQ-zw-pff" customClass="MonthFoodListViewController" customModule="schoolNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2i-L7-mKF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-L0-zhU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VJC-t8-o5r" firstAttribute="trailing" secondItem="ErV-L0-zhU" secondAttribute="trailing" id="IfG-PY-jmG"/>
+                            <constraint firstItem="VJC-t8-o5r" firstAttribute="bottom" secondItem="ErV-L0-zhU" secondAttribute="bottom" id="R04-Ey-c4n"/>
+                            <constraint firstItem="ErV-L0-zhU" firstAttribute="top" secondItem="VJC-t8-o5r" secondAttribute="top" id="U1I-CI-eZO"/>
+                            <constraint firstItem="ErV-L0-zhU" firstAttribute="leading" secondItem="VJC-t8-o5r" secondAttribute="leading" id="bmh-cM-SxC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VJC-t8-o5r"/>
+                    </view>
+                    <connections>
+                        <outlet property="monthFoodListTableView" destination="ErV-L0-zhU" id="lFG-Fq-aZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcK-oe-xpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="147"/>
+        </scene>
+    </scenes>
+</document>
